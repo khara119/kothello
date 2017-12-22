@@ -1,0 +1,13 @@
+div.main
+	div.status
+		div.left
+		div.center
+			div.button(onclick="start()") 開始
+			div.button(onclick="retire()") 降参
+		div.right
+	table.board
+		- for (i=0; i<8; i++)
+			tr
+				- for (j=0; j<8; j++)
+					td
+						div.stone
