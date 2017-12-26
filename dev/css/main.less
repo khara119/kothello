@@ -12,13 +12,24 @@ body{
 }
 
 .status {
+	text-align: center;
+	padding-bottom: 20px;
+
 	> div {
 		display: inline-block;
 	}
 
 	.center {
 		.button {
-			width: 50px;
+			width: 100px;
+			border: 1px solid black;
+			border-radius: 10px;
+			background-color: #e0e0e0;
+			text-align: center;
+		}
+
+		.button + .button {
+			margin-top: 10px;
 		}
 	}
 }
