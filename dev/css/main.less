@@ -26,6 +26,12 @@ body{
 			border-radius: 10px;
 			background-color: #e0e0e0;
 			text-align: center;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #848484;
+				color: white;
+			}
 		}
 
 		.button + .button {
@@ -34,7 +40,7 @@ body{
 	}
 }
 
-table.board {
+table#board {
 	background-color: #2e8b57;
 	border: 2px solid black;
 	border-collapse: collapse;
@@ -64,13 +70,16 @@ table.board {
 			top: 50%;
 			-webkit-transform: translateX(-50%) translateY(-50%);
 			transform: translateX(-50%) translateY(-50%);
+			display: none;
 
 			&.white {
+				display: block;
 				background-color: white;
 			}
 
 			&.black {
-				backgroun-color: black;
+				display: block;
+				background-color: black;
 			}
 		}
 	}
